@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PopFeedback</string>
+    <string name="pop_feedback_default_title_text">Is there anything you want to share with us ?</string>
+    <string name="bug_report_text">Bug Report</string>
+    <string name="feedback_text">Feedback</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
