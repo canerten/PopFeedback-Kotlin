@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#80000000">
+    android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
@@ -52,66 +51,39 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/popFeedbackDefaultPopupTitleText">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <Button
+                    android:id="@+id/bugReportButton"
+                    android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginHorizontal="32dp"
-                    android:layout_weight="1">
+                    android:layout_marginHorizontal="16dp"
+                    android:drawableTop="@drawable/ic_popfeedback_default_bug_report_icon"
+                    android:text="@string/bug_report_text"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0"
+                    android:drawablePadding="8dp">
+                </Button>
 
-                    <ImageView
-                        android:id="@+id/popFeedbackDefaultPopupBugReportImage"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_popfeedback_default_bug_report_icon" />
-
-                    <TextView
-                        android:id="@+id/popFeedbackDefaultPopupBugReportText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/bug_report_text"
-                        android:fontFamily="@font/inter_regular"
-                        android:textSize="13sp"
-                        android:textColor="@color/black"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/popFeedbackDefaultPopupBugReportImage" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <Button
+                    android:id="@+id/feedbackButton"
+                    android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginHorizontal="32dp"
-                    android:layout_weight="1">
-
-                    <ImageView
-                        android:id="@+id/popFeedbackDefaultPopupFeedbackImage"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_popfeedback_default_feedback_icon" />
-
-                    <TextView
-                        android:id="@+id/popFeedbackDefaultPopupFeedbackText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="@string/feedback_text"
-                        android:fontFamily="@font/inter_regular"
-                        android:textSize="13sp"
-                        android:textColor="@color/black"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/popFeedbackDefaultPopupFeedbackImage" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:layout_marginHorizontal="16dp"
+                    android:drawableTop="@drawable/ic_popfeedback_default_feedback_icon"
+                    android:text="@string/feedback_text"
+                    android:fontFamily="@font/inter_regular"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textAllCaps="false"
+                    android:letterSpacing="0"
+                    android:drawablePadding="8dp">
+                </Button>
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

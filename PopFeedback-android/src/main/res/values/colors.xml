@@ -11,4 +11,5 @@
     <color name="popup_default_background_color">#FFB1B1C6</color>
     <color name="popup_default_button_color">#FF8989E8</color>
     <color name="popup_default_edittext_background_color">#FFD9D9D9</color>
+    <color name="hint_color">#878484</color>
 </resources>

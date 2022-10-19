@@ -1,34 +1,21 @@
 package com.popfeedback.ui
 
-import android.app.Dialog
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
-import android.widget.Button
-import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import com.popfeedback.popfeedback_android.R
 
-
-class PopFeedbackDefaultPopup : DialogFragment() {
+class PopFeedbackReportAndFeedbackPopup : DialogFragment() {
 
     lateinit var rootView : View
-    lateinit var bugReportButton : Button
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setStyle(DialogFragment.STYLE_NORMAL,android.R.style.Theme_DeviceDefault_Light_NoActionBar_Fullscreen)
-        //setStyle(DialogFragment.STYLE_NORMAL, android.R.style.Theme_Translucent_NoTitleBar);
-    }
-
-    override fun onStart() {
-        super.onStart()
 
     }
 
@@ -37,13 +24,14 @@ class PopFeedbackDefaultPopup : DialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        rootView =  inflater.inflate(R.layout.popfeedback_default_popup, container, false)
+        rootView = inflater.inflate(
+            R.layout.fragment_pop_feedback_report_and_feedback_popup,
+            container,
+            false
+        )
 
         dialog?.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT));
         dialog?.setCanceledOnTouchOutside(true)
-
-        initViews()
-        onClickListeners()
 
         return rootView
     }
@@ -54,20 +42,5 @@ class PopFeedbackDefaultPopup : DialogFragment() {
         dialog!!.window!!.setLayout(
             ViewGroup.LayoutParams.MATCH_PARENT,
             ViewGroup.LayoutParams.WRAP_CONTENT);
-    }
-
-    fun initViews(){
-        bugReportButton = rootView.findViewById(R.id.bugReportButton)
-    }
-
-    fun onClickListeners(){
-        bugReportButton.setOnClickListener {
-            bugReportTapped()
-        }
-    }
-
-    fun bugReportTapped(){
-        PopFeedbackReportAndFeedbackPopup().show(parentFragmentManager, "")
-        dismiss();
     }
 }
