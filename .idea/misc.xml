@@ -5,13 +5,23 @@
       <map>
         <entry key="..\:/Users/Asus/AndroidStudioProjects/PopFeedback/PopFeedback-android/src/main/res/layout/popfeedback_default_popup.xml" value="0.2" />
         <entry key="..\:/Users/Asus/AndroidStudioProjects/PopFeedback/app/src/main/res/layout/activity_main.xml" value="0.3532608695652174" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/drawable/circle_shape.xml" value="0.245" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/drawable/ic_eu_flag.xml" value="0.245" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/drawable/ic_popfeedback_default_share_icon.xml" value="0.1595" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/layout/attachment_cell_single_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/layout/fragment_pop_feedback_report_and_feedback_popup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/layout/pf_rating_popup.xml" value="0.25" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/layout/pf_screenshot_popup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/layout/popfeedback_default_popup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/PopFeedback-android/src/main/res/layout/screenshot_attaachment_cell_single_row.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Asus/OneDrive/Belgeler/GitHub/PopFeedback/app/src/main/res/layout/activity_main.xml" value="0.18802083333333333" />
         <entry key="PopFeedback-android/src/main/res/drawable/edit_text_background.xml" value="0.1335" />
         <entry key="PopFeedback-android/src/main/res/layout/fragment_pop_feedback_report_and_feedback_popup.xml" value="0.15520833333333334" />
         <entry key="PopFeedback-android/src/main/res/layout/popfeedback_default_popup.xml" value="0.15520833333333334" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

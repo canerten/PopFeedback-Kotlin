@@ -9,16 +9,19 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.Button
+import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
 import com.popfeedback.popfeedback_android.R
+import com.popfeedback.visual_options.PFFeedbackPopVisualOption
 
 
-class PopFeedbackDefaultPopup : DialogFragment() {
+class PopFeedbackDefaultPopup() : DialogFragment() {
 
     lateinit var rootView : View
-    lateinit var bugReportButton : Button
 
+    lateinit var titleText : TextView
+    lateinit var bugReportButton : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,6 +46,7 @@ class PopFeedbackDefaultPopup : DialogFragment() {
         dialog?.setCanceledOnTouchOutside(true)
 
         initViews()
+        setupUI()
         onClickListeners()
 
         return rootView
@@ -56,7 +60,12 @@ class PopFeedbackDefaultPopup : DialogFragment() {
             ViewGroup.LayoutParams.WRAP_CONTENT);
     }
 
+    fun setupUI(){
+
+    }
+
     fun initViews(){
+        titleText = rootView.findViewById(R.id.popFeedbackDefaultPopupTitleText)
         bugReportButton = rootView.findViewById(R.id.bugReportButton)
     }
 

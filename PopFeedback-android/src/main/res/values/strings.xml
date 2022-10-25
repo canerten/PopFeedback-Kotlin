@@ -3,5 +3,9 @@
     <string name="pop_feedback_default_title_text">Is there anything you want to share with us ?</string>
     <string name="bug_report_text">Bug Report</string>
     <string name="feedback_text">Feedback</string>
+    <string name="share_text">Share</string>
     <string name="submit_text">Submit</string>
+    <string name="how_do_you_like_app">How do you like the app ?</string>
+    <string name="attachment">Attachment :</string>
+    <string name="optional_parentheses">(Optional)</string>
 </resources>
